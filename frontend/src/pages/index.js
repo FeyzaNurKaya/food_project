@@ -1,7 +1,12 @@
+import Header from "@/components/Header";
+import TopSelection from "@/components/TopSelection";
+
 export default function Home() {
   return (
-    <div className="flex items-center justify-center text-red-500">
-      food project
+    <div className="">
+      <Header/>
+      <TopSelection/>
     </div>
+
   );
 }
