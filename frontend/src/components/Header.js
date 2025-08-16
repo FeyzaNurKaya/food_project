@@ -6,13 +6,13 @@ const Header = () => {
     <div className='bg-white'>
       <div className='container mx-auto px-4 py-2 border-b border-black'>
         <div className='flex justify-between items-center'>
-          <div className="flex items-center space-x-8">
+          <div className="flex items-center space-x-10">
             <Image
               src="/images/logo.png"
               alt="Food Project Logo"
               width={120}
               height={120}
-              className='w-28 h-28 object-contain'
+              className='w-32 h-32 object-contain'
               priority
             />
           </div>
