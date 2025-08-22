@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Header = () => {
   return (
     <div className='bg-white'>
-      <div className='container mx-auto px-4 py-2 border-b border-black'>
+      <div className='container mx-auto px-4 py-2 border-b-2 border-black'>
         <div className='flex justify-between items-center'>
           <div className="flex items-center space-x-10">
             <Image
@@ -20,7 +20,7 @@ const Header = () => {
           <nav className="flex space-x-8">
             <a href="#" className="text-headertext hover:text-headertext2 transition-colors">Anasayfa</a>
             <a href="#" className="text-headertext hover:text-headertext2 transition-colors">Bütün Tarifler</a>
-            <a href="#" className="text-headertext hover:text-headertext2 transition-colors">Hakkımızda</a>
+            <a href="/hakkimizda" className="text-headertext hover:text-headertext2 transition-colors">Hakkımızda</a>
             <a href="#" className="text-headertext hover:text-headertext2 transition-colors">İletişim</a>
           </nav>
 
