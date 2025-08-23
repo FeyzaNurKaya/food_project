@@ -21,7 +21,7 @@ const TopSelection = () => {
 
   return (
     <div className='container mx-auto px-6'>
-      <h2 className='flex justify-center items-center text-2xl font-bold mt-10 mb-12'>
+      <h2 className='flex justify-center items-center text-2xl font-bold mt-48 mb-12'>
         Feyza'nın Yemek Tariflerine Hoşgeldiniz
       </h2>
       

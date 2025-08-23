@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 
-const MailSection = () => {
+const Footer = () => {
   const [email, setEmail] = useState('')
   const [newsletter, setNewsletter] = useState(false)
   const [errors, setErrors] = useState({})
@@ -121,4 +121,4 @@ const MailSection = () => {
   )
 }
 
-export default MailSection
+export default Footer
