@@ -32,7 +32,7 @@ const Header = () => {
 
           <nav className="flex space-x-8 cursor-pointer">
             <a href="/" className={`text-headertext hover:text-headertext2 transition-colors ${isActive('/') ? 'underline underline-offset-4' : ''}`}>Anasayfa</a>
-            <a href="#" className={`text-headertext hover:text-headertext2 transition-colors ${isActive('/tarifler') ? 'underline underline-offset-4' : ''}`}>Bütün Tarifler</a>
+            <a href="/all_recipes" className={`text-headertext hover:text-headertext2 transition-colors ${isActive('/tarifler') ? 'underline underline-offset-4' : ''}`}>Bütün Tarifler</a>
             <a href="/hakkimizda" className={`text-headertext hover:text-headertext2 transition-colors ${isActive('/hakkimizda') ? 'underline underline-offset-4' : ''}`}>Hakkımızda</a>
             <a href="/iletisim" className={`text-headertext hover:text-headertext2 transition-colors ${isActive('/iletisim') ? 'underline underline-offset-4' : ''}`}>İletişim</a>
           </nav>

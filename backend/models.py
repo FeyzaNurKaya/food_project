@@ -72,3 +72,23 @@ class RecipeResponse(RecipeBase):
         return v.isoformat() if v else None
     
     model_config = ConfigDict(from_attributes=True)
+
+class RecipeWithCategoryResponse(BaseModel):
+    id: int
+    title: str
+    description: str = None
+    ingredients: str
+    instructions: str
+    cooking_time: int = None
+    servings: int = None
+    difficulty: str = None
+    image_url: str = None
+    category_id: int
+    created_at: datetime
+    category: CategoryResponse  # Kategori bilgilerini de dahil et
+    
+    @field_serializer('created_at')
+    def serialize_datetime(self, v):
+        return v.isoformat() if v else None
+    
+    model_config = ConfigDict(from_attributes=True)

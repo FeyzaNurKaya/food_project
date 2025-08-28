@@ -59,6 +59,28 @@ def seed_data():
                 "difficulty": "Medium",
                 "image_url": "",
                 "category_id": 2
+            },
+            {
+                "title": "Roasted Chicken",
+                "description": "Geleneksel Thanksgiving hindi",
+                "ingredients": "Hindi, tereyağı, otlar, limon, sarımsak",
+                "instructions": "1. Hindi'yi marine et\n2. Otları ve limonu içine koy\n3. 165°C'de 3-4 saat pişir",
+                "cooking_time": 240,
+                "servings": 8,
+                "difficulty": "Medium",
+                "image_url": "",
+                "category_id": 3
+            },
+            {
+                "title": "Grilled Turkey",
+                "description": "Geleneksel Thanksgiving hindi",
+                "ingredients": "Hindi, tereyağı, otlar, limon, sarımsak",
+                "instructions": "1. Hindi'yi marine et\n2. Otları ve limonu içine koy\n3. 165°C'de 3-4 saat pişir",
+                "cooking_time": 240,
+                "servings": 8,
+                "difficulty": "Medium",
+                "image_url": "",
+                "category_id": 4
             }
         ]
         

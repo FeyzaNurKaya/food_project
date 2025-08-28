@@ -3,6 +3,8 @@ from sqlalchemy.orm import Session
 from typing import List
 from database import get_db
 from models import Category, Recipe, CategoryBase, CategoryResponse, RecipeBase, RecipeResponse
+from sqlalchemy.orm import joinedload
+from models import RecipeWithCategoryResponse
 
 router = APIRouter()
 
@@ -35,6 +37,12 @@ async def get_category(category_id: int, db: Session = Depends(get_db)):
 async def get_recipes(db: Session = Depends(get_db)):
     """Tüm tarifleri getir"""
     recipes = db.query(Recipe).all()
+    return recipes
+
+@router.get("/recipes-with-categories", response_model=List[RecipeWithCategoryResponse])
+async def get_recipes_with_categories(db: Session = Depends(get_db)):
+    """Tüm tarifleri kategori bilgileriyle birlikte getir"""
+    recipes = db.query(Recipe).options(joinedload(Recipe.category)).all()
     return recipes
 
 @router.get("/categories/{category_id}/recipes", response_model=List[RecipeResponse])
